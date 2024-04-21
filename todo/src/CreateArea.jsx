@@ -37,11 +37,10 @@ function CreateArea(props) {
           name="content"
           onChange={handleChange}
           value={note.content}
-          placeholder="take a note..."
-          cols="30"
-          rows="10"
+          placeholder="Take a note..."
+          rows="3"
         ></textarea>
-        <button onClick={submitNote}>ADD</button>
+        <button onClick={submitNote}>Add</button>
       </form>
     </div>
   );
