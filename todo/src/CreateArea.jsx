@@ -21,7 +21,10 @@ function CreateArea(props) {
   }
 
   function submitNote(event) {
-    props.onAdd(note);
+    //empty Body or empty input field of content cannot create new note
+    if (note.content != "") {
+      props.onAdd(note);
+    }
     setNote({
       title: "",
       content: "",
