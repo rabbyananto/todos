@@ -5,7 +5,7 @@ function Note(props) {
   function handleClick() {
     props.onDelete(props.id);
   }
-
+//have to add onEdit functionality
   return (
     <div className="note">
       <h1>{props.title} </h1>
